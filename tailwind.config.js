@@ -12,6 +12,11 @@ module.exports = {
 	darkMode: 'class',
 	theme: {
 		extend: {
+			fontFamily: {
+				// 兼容 Windows 和 macOS 的字体栈
+				'sans': ['Helvetica Neue', 'Helvetica', 'Arial', 'Segoe UI', 'Roboto', 'Microsoft YaHei', '微软雅黑', 'sans-serif'],
+				'helvetica': ['Helvetica Neue', 'Helvetica', 'Arial', 'Segoe UI', 'Roboto', 'Microsoft YaHei', '微软雅黑', 'sans-serif'],
+			},
 			colors: {
 				'primary-light': '#F7F8FC',
 				'secondary-light': '#FFFFFF',

@@ -56,7 +56,7 @@ export default {
 				<div>
 					<div><img src="../assets/images/banner/banner_tag.png"  /></div>
 					
-					<h1 class="text-5xl lg:text-6xl font-bold mb-6 leading-tight text-black  mt-4">
+					<h1 class="text-5xl lg:text-6xl font-bold mb-6 leading-tight text-black  mt-4 font-helvetica">
 						Financial Freedom for <span class="text-[#1A70FF]">Every Nigerian</span>
 					</h1>
 					
@@ -76,15 +76,15 @@ export default {
 					
 					<div class="grid grid-cols-3 gap-6 text-center">
 						<div>
-							<div class="relative text-2xl font-bold text-black text-center"><img class="relative" src="../assets/images/banner/banner_num_bg.png" alt="Number Background" ><span class="absolute top-2 left-0 text-2xl font-bold text-black">500K+</span></div>
+							<div class="relative text-2xl text-black text-center"><img class="relative" src="../assets/images/banner/banner_num_bg.png" alt="Number Background" ><span class="absolute top-2 left-0 text-2xl  text-black font-helvetica">500K+</span></div>
 							<div class="text-black text-sm text-left mt-2">Customers</div>
 						</div>
 						<div>
-							<div class="relative text-2xl font-bold text-black text-center"><img class="relative" src="../assets/images/banner/banner_num_bg.png" alt="Number Background" ><span class="absolute top-2 left-0 text-2xl font-bold text-black">₦15B+</span></div>
+							<div class="relative text-2xl  text-black text-center"><img class="relative mx-auto" src="../assets/images/banner/banner_num_bg.png" alt="Number Background" ><span class="absolute top-2 left-0 text-2xl  text-black font-helvetica text-center w-full">₦15B+</span></div>
 							<div class="text-black text-sm">Loans Disbursed</div>
 						</div>
 						<div>
-							<div class="relative text-2xl font-bold text-black text-center"><img class="relative" src="../assets/images/banner/banner_num_bg.png" alt="Number Background" ><span class="absolute top-2 left-0 text-2xl font-bold text-black">98%</span></div>
+							<div class="relative text-2xl text-black text-center"><img class="relative mx-auto" src="../assets/images/banner/banner_num_bg.png" alt="Number Background" ><span class="absolute top-2 left-0 text-2xl text-black font-helvetica text-center w-full">98%</span></div>
 							<div class="text-black text-sm">Approval Rate</div>
 						</div>
 					</div>

@@ -16,18 +16,8 @@ export default {
 	<header class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200/80">
 		<div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 			<div class="flex items-center gap-3">
-				<div class="bg-gradient-to-br from-blue-600 to-blue-800 p-2 rounded-lg">
-					<i class="fas fa-shield-alt text-white text-xl"></i>
-				</div>
-				<div>
-					<span class="font-bold text-2xl bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">SkyLend</span>
-					<div class="flex items-center gap-2 mt-1">
-						<span class="inline-flex items-center gap-2 bg-blue-50 px-4 py-1 rounded-full text-xs text-blue-600 font-medium">
-							<i class="fas fa-certificate"></i>
-							CBN Licensed
-						</span>
-					</div>
-				</div>
+				<img src="../../assets/images/logo/logo.png" alt="SkyLend" />
+                <img src="../../assets/images/logo/logo_2.png" alt="SkyLend" />
 			</div>
 			
 			<nav class="hidden lg:flex gap-8 text-gray-700 font-medium">
@@ -39,11 +29,7 @@ export default {
 			</nav>
 			
 			<div class="flex items-center gap-4">
-				<a @click.prevent="scrollToSection('contact')" href="#contact" class="text-gray-700 hover:text-blue-600 font-medium cursor-pointer">Contact</a>
-				<a @click.prevent="scrollToSection('apply')" href="#apply" class="bg-gradient-to-r from-blue-600 to-blue-800 text-white px-6 py-2 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 cursor-pointer inline-flex items-center gap-2">
-					<i class="fas fa-rocket"></i>
-					Apply Now
-				</a>
+				<a @click.prevent="scrollToSection('contact')" href="#contact" class="border-[#1A70FF] border text-[#1A70FF] px-8 py-2 rounded-lg hover:text-blue-600 font-medium cursor-pointer">Contact Us</a>
 			</div>
 		</div>
 	</header>

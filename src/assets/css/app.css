@@ -11,8 +11,72 @@
 
 /* Custom Styles Below */
 
+/* Helvetica Neue 字体定义 - 使用本地字体文件，兼容 macOS 和 Windows */
+@font-face {
+	font-family: 'Helvetica Neue';
+	src: url('./fonts/H-HelveticaNeueLights-4.ttc') format('truetype-collection'),
+		 url('./fonts/H-HelveticaNeue-2.ttc') format('truetype-collection'),
+		 local('Helvetica Neue Light'),
+		 local('HelveticaNeue-Light');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Helvetica Neue';
+	src: url('./fonts/H-HelveticaNeue-2.ttc') format('truetype-collection'),
+		 url('./fonts/H-HelveticaNeueInterface-5.ttc') format('truetype-collection'),
+		 url('./fonts/HELVETI1-1.ttf') format('truetype'),
+		 local('Helvetica Neue'),
+		 local('HelveticaNeue'),
+		 local('Helvetica Neue Regular');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Helvetica Neue';
+	src: url('./fonts/H-HelveticaNeue-2.ttc') format('truetype-collection'),
+		 url('./fonts/H-HelveticaNeueInterface-5.ttc') format('truetype-collection'),
+		 url('./fonts/HELVETI1-1.ttf') format('truetype'),
+		 local('Helvetica Neue Medium'),
+		 local('HelveticaNeue-Medium');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Helvetica Neue';
+	src: url('./fonts/H-HelveticaNeue-2.ttc') format('truetype-collection'),
+		 url('./fonts/H-Helvetica-6.ttc') format('truetype-collection'),
+		 url('./fonts/HELVETI1-1.ttf') format('truetype'),
+		 local('Helvetica Neue Bold'),
+		 local('HelveticaNeue-Bold');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* 标准 Helvetica 字体（作为回退） */
+@font-face {
+	font-family: 'Helvetica';
+	src: url('./fonts/H-Helvetica-6.ttc') format('truetype-collection'),
+		 url('./fonts/HELVETI1-1.ttf') format('truetype'),
+		 local('Helvetica');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* 兼容 Windows 和 macOS 的字体栈 */
 body {
-	font-family: 'GeneralSans-Regular';
+	/* macOS 优先使用 Helvetica Neue，Windows 使用 Arial，其他系统使用通用无衬线字体 */
+	font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'Segoe UI', 'Roboto', 'Microsoft YaHei', '微软雅黑', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 /* Theme Colors */
