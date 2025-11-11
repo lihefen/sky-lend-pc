@@ -1,0 +1,18 @@
+/*== 
+ * Vue.js & TailwindCSS Portfolio Main CSS File
+ * Powered by: @realstoman
+*/
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+/* Custom Styles Below */
+
+body {
+	font-family: 'GeneralSans-Regular';
+}
+
+/* Theme Colors */
