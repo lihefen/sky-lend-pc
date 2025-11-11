@@ -51,7 +51,7 @@ export default {
 <template>
 	<div class="pt-20">
 		<!-- Hero Section -->
-		<section id="home" class="bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+		<section id="home" class="text-white">
 			<div class="max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-12 items-center">
 				<div>
 					<div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
@@ -59,22 +59,21 @@ export default {
 						<span class="text-sm font-medium">Instant Approval in 5 Minutes</span>
 					</div>
 					
-					<h1 class="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-						Financial Freedom for Every Nigerian
+					<h1 class="text-5xl lg:text-6xl font-bold mb-6 leading-tight text-black">
+						Financial Freedom for <span class="text-[#1A70FF]">Every Nigerian</span>
 					</h1>
 					
-					<p class="text-xl text-blue-100 mb-8 leading-relaxed">
-						Get instant loans from ₦5,000 to ₦3,000,000. Licensed by the Central Bank of Nigeria. 
-						No collateral, no hidden fees. Your trusted financial partner.
+					<p class="text-xl text-black mb-8 leading-relaxed">
+						Get instant loans from <span class="text-[#FF6600]">₦5,000</span> to<span class="text-[#FF6600]"> ₦3,000,000</span>. Licensed by the Central Bank of Nigeria. No collateral, no hidden fees. Your trusted financial partner.
 					</p>
 					
 					<div class="flex flex-col sm:flex-row gap-4 mb-8">
-						<a @click.prevent="scrollToSection('apply')" href="#apply" class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold transition text-center cursor-pointer inline-flex items-center justify-center gap-2">
+						<a @click.prevent="scrollToSection('apply')" href="#apply" class="bg-[#1A70FF] hover:bg-[#1A70FF] text-white px-8 py-3 rounded-lg font-semibold transition text-center cursor-pointer inline-flex items-center justify-center gap-2">
 							<i class="fas fa-paper-plane"></i>
 							Apply Instantly
 						</a>
-						<a @click.prevent="scrollToSection('features')" href="#features" class="bg-white/10 text-white hover:bg-white/20 px-8 py-3 rounded-lg font-semibold transition text-center cursor-pointer">
-							Learn More
+						<a @click.prevent="scrollToSection('features')" href="#features" class="bg-white/10 border border-[#1A70FF] text-[#1A70FF] hover:bg-white/20 px-8 py-3 rounded-lg font-semibold transition text-center cursor-pointer">
+							Watch Demo
 						</a>
 					</div>
 					
@@ -95,55 +94,31 @@ export default {
 				</div>
 				
 				<div class="relative">
-					<div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
-						<img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=500&fit=crop" 
+					<div >
+						<img src="../assets/images/banner/banner_person.png" 
               alt="SkyLend Mobile App" 
-              class="rounded-xl shadow-2xl w-full">
+              class="w-full">
 					</div>
 					
-					<!-- Floating Trust Badges -->
-					<div class="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-2xl p-4">
-						<div class="flex items-center gap-3">
-							<div class="bg-green-100 p-2 rounded-full">
-								<i class="fas fa-shield-alt text-green-600"></i>
-							</div>
-							<div>
-								<div class="font-semibold text-gray-900">NDIC Insured</div>
-								<div class="text-xs text-gray-500">Your funds are protected</div>
-							</div>
-						</div>
-					</div>
-					
-					<div class="absolute -top-6 -right-6 bg-white rounded-xl shadow-2xl p-4">
-						<div class="flex items-center gap-3">
-							<div class="bg-blue-100 p-2 rounded-full">
-								<i class="fas fa-bolt text-blue-600"></i>
-							</div>
-							<div>
-								<div class="font-semibold text-gray-900">5 Min</div>
-								<div class="text-xs text-gray-500">Average Approval</div>
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 		</section>
 
 		<!-- Trust Bar -->
-		<section class="bg-gray-50 py-8">
+		<section class="bg-gray-50 py-10">
 			<div class="max-w-7xl mx-auto px-6">
-				<div class="text-center text-gray-600 mb-4 text-sm font-medium">Trusted by leading Nigerian institutions</div>
-				<div class="grid grid-cols-2 md:grid-cols-5 gap-8 items-center justify-center opacity-60">
-					<img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/Coat_of_arms_of_Nigeria.svg/200px-Coat_of_arms_of_Nigeria.svg.png" 
-            alt="CBN" class="h-12 mx-auto grayscale">
-					<img src="https://indic.ng/images/indic-logo.svg" 
-            alt="NDIC" class="h-10 mx-auto grayscale">
-					<img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Flutterwave_logo.png" 
-            alt="Flutterwave" class="h-8 mx-auto grayscale">
-					<img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Visa_Logo.png" 
-            alt="Visa" class="h-8 mx-auto grayscale">
-					<img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Paystack_Logo.png" 
-            alt="Paystack" class="h-6 mx-auto grayscale">
+				<div class="text-center text-gray-600  text-sm font-medium">Trusted by leading Nigerian institutions</div>
+				<div class="grid grid-cols-2 md:grid-cols-5 gap-8 items-center justify-center mt-16">
+					<img src="../assets/images/trusted/trusted_1.png" 
+            alt="CBN" class="h-12 mx-auto ">
+					<img src="../assets/images/trusted/trusted_2.png" 
+            alt="NDIC" class="h-12 mx-auto ">
+					<img src="../assets/images/trusted/trusted_3.png"  
+            alt="Flutterwave" class="h-12 mx-auto ">
+					<img src="../assets/images/trusted/trusted_4.png"  
+            alt="Visa" class="h-12 mx-auto ">
+					<img src="../assets/images/trusted/trusted_5.png" 
+            alt="Paystack" class="h-12 mx-auto">
 				</div>
 			</div>
 		</section>
@@ -159,76 +134,191 @@ export default {
 				</div>
 
 				<div class="grid md:grid-cols-3 gap-8">
-					<!-- Personal Loans -->
-					<div class="bg-white rounded-xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-						<div class="bg-blue-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-							<i class="fas fa-user text-blue-600 text-xl"></i>
+					<!-- Reuse Credit Line -->
+                    <!-- border: 1px solid rgba(215, 237, 255, 1);
+                    border-radius: 20px;
+                    background: linear-gradient(180.00deg, rgba(197, 248, 255, 1),rgba(255, 255, 255, 1) 100%); -->
+
+					<div style="background: linear-gradient(180.00deg, rgba(197, 248, 255, .5),rgba(255, 255, 255, 1) 10%);" class="rounded-2xl p-8 shadow-lg border border-[#D7EDFF] hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+						<div class="flex items-center gap-3 mb-4">
+							<div class="bg-blue-200 w-12 h-12 rounded-full flex items-center justify-center">
+								<i class="fas fa-sync-alt text-blue-600 text-xl"></i>
+							</div>
+							<h3 class="text-xl font-bold text-gray-900">Reuse Credit Line</h3>
 						</div>
-						<h3 class="text-xl font-bold text-gray-900 mb-3">Personal Loans</h3>
-						<p class="text-gray-600 mb-4">Get up to ₦2,000,000 for your personal needs with flexible repayment terms.</p>
-						<ul class="space-y-2 text-gray-600">
-							<li class="flex items-center gap-2">
-								<i class="fas fa-check text-green-500 text-sm"></i>
-								<span>No collateral required</span>
-							</li>
-							<li class="flex items-center gap-2">
-								<i class="fas fa-check text-green-500 text-sm"></i>
-								<span>Same day disbursement</span>
-							</li>
-							<li class="flex items-center gap-2">
-								<i class="fas fa-check text-green-500 text-sm"></i>
-								<span>3-12 month tenure</span>
-							</li>
-						</ul>
+						<p class="text-gray-600 mb-6">Your credit limit refreshes as you repay. Use it again without reapplying!</p>
+						
+						<!-- Financial Details -->
+						<div class="grid grid-cols-2 gap-4 mb-6">
+							<div>
+								<div class="text-2xl font-bold text-gray-900">₦5,000 - ₦100,000</div>
+								<div class="text-sm text-gray-600">Reusable Limit</div>
+							</div>
+							<div>
+								<div class="text-2xl font-bold text-gray-900">0.05%</div>
+								<div class="text-sm text-gray-600">Daily Interest</div>
+							</div>
+							<div>
+								<div class="text-2xl font-bold text-gray-900">Instant</div>
+								<div class="text-sm text-gray-600">Repeat Access</div>
+							</div>
+							<div>
+								<div class="text-2xl font-bold text-gray-900">5 mins</div>
+								<div class="text-sm text-gray-600">First Disbursement</div>
+							</div>
+						</div>
+
+						<!-- Benefits Section -->
+						<div class="mb-6">
+							<div class="flex items-center gap-2 mb-3">
+								<i class="fas fa-gem text-blue-600"></i>
+								<h4 class="font-semibold text-gray-900">Benefits for repeat borrowers</h4>
+							</div>
+							<ul class="space-y-2 text-gray-600">
+								<li class="flex items-start gap-2">
+									<i class="fas fa-check text-green-500 text-sm mt-1"></i>
+									<span class="text-sm">Higher loan amounts with each successful repayment</span>
+								</li>
+								<li class="flex items-start gap-2">
+									<i class="fas fa-check text-green-500 text-sm mt-1"></i>
+									<span class="text-sm">Faster approval - no re-application needed</span>
+								</li>
+								<li class="flex items-start gap-2">
+									<i class="fas fa-check text-green-500 text-sm mt-1"></i>
+									<span class="text-sm">Lower interest rates for loyal customers</span>
+								</li>
+								<li class="flex items-start gap-2">
+									<i class="fas fa-check text-green-500 text-sm mt-1"></i>
+									<span class="text-sm">One-tap borrowing after first loan</span>
+								</li>
+							</ul>
+						</div>
+
+						<button class="w-full bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300">
+							Borrow Again
+						</button>
 					</div>
 
-					<!-- Business Loans -->
-					<div class="bg-white rounded-xl p-8 shadow-lg border-2 border-blue-200 relative hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-						<div class="absolute -top-3 left-6 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium">
-							Most Popular
+					<!-- Growing Loan -->
+					<div style="background: linear-gradient(180.00deg, rgba(197, 248, 255, .5),rgba(255, 255, 255, 1) 10%);" class="rounded-2xl p-8 shadow-lg border border-[#D7EDFF] hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+						<div class="flex items-center gap-3 mb-4">
+							<div class="bg-blue-200 w-12 h-12 rounded-full flex items-center justify-center">
+								<i class="fas fa-chart-line text-blue-600 text-xl"></i>
+							</div>
+							<h3 class="text-xl font-bold text-gray-900">Growing Loan</h3>
 						</div>
-						<div class="bg-orange-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-							<i class="fas fa-briefcase text-orange-600 text-xl"></i>
+						<p class="text-gray-600 mb-6">Each successful repayment increases your borrowing power and lower rates</p>
+						
+						<!-- Financial Details -->
+						<div class="grid grid-cols-2 gap-4 mb-6">
+							<div>
+								<div class="text-2xl font-bold text-gray-900">₦10,000 - ₦500,000</div>
+								<div class="text-sm text-gray-600">Growing Limit</div>
+							</div>
+							<div>
+								<div class="text-2xl font-bold text-gray-900">1.2% - 2.0%</div>
+								<div class="text-sm text-gray-600">Loyalty Rate</div>
+							</div>
+							<div>
+								<div class="text-2xl font-bold text-gray-900">3 - 24 months</div>
+								<div class="text-sm text-gray-600">Flexible Terms</div>
+							</div>
+							<div>
+								<div class="text-2xl font-bold text-gray-900">↑25%</div>
+								<div class="text-sm text-gray-600">Limit increase</div>
+							</div>
 						</div>
-						<h3 class="text-xl font-bold text-gray-900 mb-3">Business Loans</h3>
-						<p class="text-gray-600 mb-4">Grow your business with loans up to ₦3,000,000. Perfect for SMEs and entrepreneurs.</p>
-						<ul class="space-y-2 text-gray-600">
-							<li class="flex items-center gap-2">
-								<i class="fas fa-check text-green-500 text-sm"></i>
-								<span>Working capital financing</span>
-							</li>
-							<li class="flex items-center gap-2">
-								<i class="fas fa-check text-green-500 text-sm"></i>
-								<span>Equipment purchase</span>
-							</li>
-							<li class="flex items-center gap-2">
-								<i class="fas fa-check text-green-500 text-sm"></i>
-								<span>Inventory management</span>
-							</li>
-						</ul>
+
+						<!-- Benefits Section -->
+						<div class="mb-6">
+							<div class="flex items-center gap-2 mb-3">
+								<i class="fas fa-gem text-blue-600"></i>
+								<h4 class="font-semibold text-gray-900">Loyalty Benefits</h4>
+							</div>
+							<ul class="space-y-2 text-gray-600">
+								<li class="flex items-start gap-2">
+									<i class="fas fa-check text-green-500 text-sm mt-1"></i>
+									<span class="text-sm">Automatic 25% limit increase after 3 repayments</span>
+								</li>
+								<li class="flex items-start gap-2">
+									<i class="fas fa-check text-green-500 text-sm mt-1"></i>
+									<span class="text-sm">Rate decrease with each successful loan</span>
+								</li>
+								<li class="flex items-start gap-2">
+									<i class="fas fa-check text-green-500 text-sm mt-1"></i>
+									<span class="text-sm">Borrow again before finishing current loan</span>
+								</li>
+								<li class="flex items-start gap-2">
+									<i class="fas fa-check text-green-500 text-sm mt-1"></i>
+									<span class="text-sm">Special offers for consistent borrowers</span>
+								</li>
+							</ul>
+						</div>
+
+						<button class="w-full bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300">
+							Borrow Again
+						</button>
 					</div>
 
-					<!-- Emergency Loans -->
-					<div class="bg-white rounded-xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-						<div class="bg-green-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-							<i class="fas fa-ambulance text-green-600 text-xl"></i>
+					<!-- Quick Cash -->
+					<div style="background: linear-gradient(180.00deg, rgba(197, 248, 255, .5),rgba(255, 255, 255, 1) 10%);" class="rounded-2xl p-8 shadow-lg border border-[#D7EDFF] hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+						<div class="flex items-center gap-3 mb-4">
+							<div class="bg-blue-200 w-12 h-12 rounded-full flex items-center justify-center">
+								<i class="fas fa-wallet text-blue-600 text-xl"></i>
+							</div>
+							<h3 class="text-xl font-bold text-gray-900">Quick Cash</h3>
 						</div>
-						<h3 class="text-xl font-bold text-gray-900 mb-3">Emergency Loans</h3>
-						<p class="text-gray-600 mb-4">Quick access to funds for urgent needs. Get up to ₦500,000 in minutes.</p>
-						<ul class="space-y-2 text-gray-600">
-							<li class="flex items-center gap-2">
-								<i class="fas fa-check text-green-500 text-sm"></i>
-								<span>Medical emergencies</span>
-							</li>
-							<li class="flex items-center gap-2">
-								<i class="fas fa-check text-green-500 text-sm"></i>
-								<span>Urgent repairs</span>
-							</li>
-							<li class="flex items-center gap-2">
-								<i class="fas fa-check text-green-500 text-sm"></i>
-								<span>5-minute approval</span>
-							</li>
-						</ul>
+						<p class="text-gray-600 mb-6">Need more between paydays? Get instant access after your first loan.</p>
+						
+						<!-- Financial Details -->
+						<div class="grid grid-cols-2 gap-4 mb-6">
+							<div>
+								<div class="text-2xl font-bold text-gray-900">₦3,000 - ₦50,000</div>
+								<div class="text-sm text-gray-600">Quick Cash</div>
+							</div>
+							<div>
+								<div class="text-2xl font-bold text-gray-900">0.07%</div>
+								<div class="text-sm text-gray-600">Daily Interest</div>
+							</div>
+							<div>
+								<div class="text-2xl font-bold text-gray-900">7 - 30 days</div>
+								<div class="text-sm text-gray-600">Short Term</div>
+							</div>
+							<div>
+								<div class="text-2xl font-bold text-gray-900">30 secs</div>
+								<div class="text-sm text-gray-600">Repeat Access</div>
+							</div>
+						</div>
+
+						<!-- Benefits Section -->
+						<div class="mb-6">
+							<div class="flex items-center gap-2 mb-3">
+								<i class="fas fa-gem text-blue-600"></i>
+								<h4 class="font-semibold text-gray-900">Instant Repeat Borrowing</h4>
+							</div>
+							<ul class="space-y-2 text-gray-600">
+								<li class="flex items-start gap-2">
+									<i class="fas fa-check text-green-500 text-sm mt-1"></i>
+									<span class="text-sm">One - tap access after first approval</span>
+								</li>
+								<li class="flex items-start gap-2">
+									<i class="fas fa-check text-green-500 text-sm mt-1"></i>
+									<span class="text-sm">No documents needed for repeat loans</span>
+								</li>
+								<li class="flex items-start gap-2">
+									<i class="fas fa-check text-green-500 text-sm mt-1"></i>
+									<span class="text-sm">Borrow again even with existing loans</span>
+								</li>
+								<li class="flex items-start gap-2">
+									<i class="fas fa-check text-green-500 text-sm mt-1"></i>
+									<span class="text-sm">Automatic increase with good history</span>
+								</li>
+							</ul>
+						</div>
+
+						<button class="w-full bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300">
+							Borrow Again
+						</button>
 					</div>
 				</div>
 			</div>
