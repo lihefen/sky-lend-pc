@@ -54,12 +54,9 @@ export default {
 		<section id="home" class="text-white">
 			<div class="max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-12 items-center">
 				<div>
-					<div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
-						<i class="fas fa-bolt"></i>
-						<span class="text-sm font-medium">Instant Approval in 5 Minutes</span>
-					</div>
+					<div><img src="../assets/images/banner/banner_tag.png"  /></div>
 					
-					<h1 class="text-5xl lg:text-6xl font-bold mb-6 leading-tight text-black">
+					<h1 class="text-5xl lg:text-6xl font-bold mb-6 leading-tight text-black  mt-4">
 						Financial Freedom for <span class="text-[#1A70FF]">Every Nigerian</span>
 					</h1>
 					
@@ -79,16 +76,16 @@ export default {
 					
 					<div class="grid grid-cols-3 gap-6 text-center">
 						<div>
-							<div class="text-2xl font-bold">500K+</div>
-							<div class="text-blue-200 text-sm">Happy Customers</div>
+							<div class="relative text-2xl font-bold text-black text-center"><img class="relative" src="../assets/images/banner/banner_num_bg.png" alt="Number Background" ><span class="absolute top-2 left-0 text-2xl font-bold text-black">500K+</span></div>
+							<div class="text-black text-sm text-left mt-2">Customers</div>
 						</div>
 						<div>
-							<div class="text-2xl font-bold">₦15B+</div>
-							<div class="text-blue-200 text-sm">Loans Disbursed</div>
+							<div class="relative text-2xl font-bold text-black text-center"><img class="relative" src="../assets/images/banner/banner_num_bg.png" alt="Number Background" ><span class="absolute top-2 left-0 text-2xl font-bold text-black">₦15B+</span></div>
+							<div class="text-black text-sm">Loans Disbursed</div>
 						</div>
 						<div>
-							<div class="text-2xl font-bold">98%</div>
-							<div class="text-blue-200 text-sm">Approval Rate</div>
+							<div class="relative text-2xl font-bold text-black text-center"><img class="relative" src="../assets/images/banner/banner_num_bg.png" alt="Number Background" ><span class="absolute top-2 left-0 text-2xl font-bold text-black">98%</span></div>
+							<div class="text-black text-sm">Approval Rate</div>
 						</div>
 					</div>
 				</div>
@@ -326,53 +323,75 @@ export default {
 		</section>
 
 		<!-- How It Works -->
-		<section id="how-it-works" class="py-20 bg-gray-50">
-			<div class="max-w-7xl mx-auto px-6">
+		<section id="how-it-works" style="background: rgba(26, 112, 255, 1);" class="py-20 bg-gray-50 relative overflow-hidden">
+			<!-- Background Pattern -->
+			<div class="absolute inset-0 opacity-10">
+				<div class="absolute inset-0" style="background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,0.1) 10px, rgba(255,255,255,0.1) 20px);"></div>
+			</div>
+			
+			<div class="max-w-7xl mx-auto px-6 relative z-10">
 				<div class="text-center mb-16">
-					<h2 class="text-4xl font-bold text-gray-900 mb-4">Get Your Loan in 4 Simple Steps</h2>
-					<p class="text-xl text-gray-600">Our process is designed to be fast, secure, and completely digital.</p>
+					<h2 class="text-4xl font-bold text-white mb-4">Get Your Loan in 4 Simple Steps</h2>
+					<p class="text-xl text-white/90">Our process is designed to be fast, secure, and completely digital.</p>
 				</div>
 
-				<div class="grid md:grid-cols-4 gap-8">
-					<div class="text-center">
-						<div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
-							<span class="text-blue-600 text-2xl font-bold">1</span>
+				<!-- Steps Container -->
+				<div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-2 lg:gap-4 mb-12">
+					<!-- Step 1 -->
+					<div class="flex flex-col items-center w-full md:w-auto">
+						<div class="relative w-full max-w-[280px] md:max-w-[240px] lg:max-w-[280px]">
+							<img src="../assets/images/step/step_1.png" alt="Step 1: Download App" class="w-full h-auto object-contain"/>
 						</div>
-						<h3 class="text-lg font-semibold text-gray-900 mb-2">Download App</h3>
-						<p class="text-gray-600">Get the SkyLend app from Google Play or App Store</p>
 					</div>
-
-					<div class="text-center">
-						<div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
-							<span class="text-blue-600 text-2xl font-bold">2</span>
-						</div>
-						<h3 class="text-lg font-semibold text-gray-900 mb-2">Register</h3>
-						<p class="text-gray-600">Complete your profile with basic information</p>
+					
+					<!-- Arrow 1 -->
+					<div class="hidden md:block flex-shrink-0 px-2 lg:px-4">
+						<img src="../assets/images/step/arrow.png" alt="Arrow" />
 					</div>
-
-					<div class="text-center">
-						<div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
-							<span class="text-blue-600 text-2xl font-bold">3</span>
+					
+					<!-- Step 2 -->
+					<div class="flex flex-col items-center w-full md:w-auto">
+						<div class="relative w-full max-w-[280px] md:max-w-[240px] lg:max-w-[280px]">
+							<img src="../assets/images/step/step_2.png" alt="Step 2: Register" class="w-full h-auto object-contain"/>
 						</div>
-						<h3 class="text-lg font-semibold text-gray-900 mb-2">Get Approved</h3>
-						<p class="text-gray-600">AI-powered instant approval decision</p>
 					</div>
-
-					<div class="text-center">
-						<div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
-							<span class="text-blue-600 text-2xl font-bold">4</span>
+					
+					<!-- Arrow 2 -->
+					<div class="hidden md:block flex-shrink-0 px-2 lg:px-4">
+						<img src="../assets/images/step/arrow.png" alt="Arrow" />
+					</div>
+					
+					<!-- Step 3 -->
+					<div class="flex flex-col items-center w-full md:w-auto">
+						<div class="relative w-full max-w-[280px] md:max-w-[240px] lg:max-w-[280px]">
+							<img src="../assets/images/step/step_3.png" alt="Step 3: Get Approved" />
 						</div>
-						<h3 class="text-lg font-semibold text-gray-900 mb-2">Receive Funds</h3>
-						<p class="text-gray-600">Money sent directly to your bank account</p>
+					</div>
+					
+					<!-- Arrow 3 -->
+					<div class="hidden md:block flex-shrink-0 px-2 lg:px-4">
+						<img src="../assets/images/step/arrow.png" alt="Arrow" />
+					</div>
+					
+					<!-- Step 4 -->
+					<div class="flex flex-col items-center w-full md:w-auto">
+						<div class="relative w-full max-w-[280px] md:max-w-[240px] lg:max-w-[280px]">
+							<img src="../assets/images/step/step_4.png" alt="Step 4: Receive Funds" class="w-full h-auto object-contain"/>
+						</div>
 					</div>
 				</div>
 
+				<!-- App Download Links -->
 				<div class="text-center mt-12">
 					<div class="flex justify-center gap-4 flex-wrap">
-						<img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" 
-              alt="Google Play" class="h-12">
-						<img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Download_on_the_App_Store_Badge.svg" 
-              alt="App Store" class="h-12">
+						<a href="#" class="transition-transform hover:scale-105">
+							<img src="../assets/images/step/apple_img.png" 
+								alt="Download on App Store" class="h-12 lg:h-14 object-contain">
+						</a>
+						<a href="#" class="transition-transform hover:scale-105">
+							<img src="../assets/images/step/google_img.png" 
+								alt="Get it on Google Play" class="h-12 lg:h-14 object-contain">
+						</a>
 					</div>
 				</div>
 			</div>
