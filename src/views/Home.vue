@@ -134,37 +134,34 @@ export default {
 				</div>
 
 				<div class="grid md:grid-cols-3 gap-8">
-					<!-- Reuse Credit Line -->
-                    <!-- border: 1px solid rgba(215, 237, 255, 1);
-                    border-radius: 20px;
-                    background: linear-gradient(180.00deg, rgba(197, 248, 255, 1),rgba(255, 255, 255, 1) 100%); -->
-
 					<div style="background: linear-gradient(180.00deg, rgba(197, 248, 255, .5),rgba(255, 255, 255, 1) 10%);" class="rounded-2xl p-8 shadow-lg border border-[#D7EDFF] hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-						<div class="flex items-center gap-3 mb-4">
-							<div class="bg-blue-200 w-12 h-12 rounded-full flex items-center justify-center">
-								<i class="fas fa-sync-alt text-blue-600 text-xl"></i>
+						<div class="flex flex-col md:flex-row items-center md:items-start gap-3 mb-4">
+							<div class="bg-blue-200 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
+								<img src="../assets/images/solutions/pro_icon_1.png" alt="Reuse Credit Line" class="w-12 h-12 object-contain"> 
 							</div>
-							<h3 class="text-xl font-bold text-gray-900">Reuse Credit Line</h3>
+							<div class="text-center md:text-left">
+                                <h3 class="text-xl font-bold text-gray-900">Reuse Credit Line</h3>
+                            <p class="text-gray-600 text-xs">Your credit limit refreshes as you repay. Use it again without reapplying!</p>
+                            </div>
 						</div>
-						<p class="text-gray-600 mb-6">Your credit limit refreshes as you repay. Use it again without reapplying!</p>
 						
 						<!-- Financial Details -->
 						<div class="grid grid-cols-2 gap-4 mb-6">
 							<div>
-								<div class="text-2xl font-bold text-gray-900">₦5,000 - ₦100,000</div>
-								<div class="text-sm text-gray-600">Reusable Limit</div>
+								<div class="text-sm font-bold text-[#0965FE]">₦5,000 - ₦100,000</div>
+								<div class="text-xs text-gray-600">Reusable Limit</div>
 							</div>
 							<div>
-								<div class="text-2xl font-bold text-gray-900">0.05%</div>
-								<div class="text-sm text-gray-600">Daily Interest</div>
+								<div class="text-sm font-bold text-[#0965FE] text-right">0.05%</div>
+								<div class="text-xs  text-right text-gray-600">Daily Interest</div>
 							</div>
 							<div>
-								<div class="text-2xl font-bold text-gray-900">Instant</div>
-								<div class="text-sm text-gray-600">Repeat Access</div>
+								<div class="text-sm font-bold text-[#0965FE] text-left">Instant</div>
+								<div class="text-xs text-gray-600 text-left">Repeat Access</div>
 							</div>
 							<div>
-								<div class="text-2xl font-bold text-gray-900">5 mins</div>
-								<div class="text-sm text-gray-600">First Disbursement</div>
+								<div class="text-sm font-bold text-[#0965FE] text-right">5 mins</div>
+								<div class="text-xs text-gray-600 text-right">First Disbursement</div>
 							</div>
 						</div>
 
@@ -201,31 +198,33 @@ export default {
 
 					<!-- Growing Loan -->
 					<div style="background: linear-gradient(180.00deg, rgba(197, 248, 255, .5),rgba(255, 255, 255, 1) 10%);" class="rounded-2xl p-8 shadow-lg border border-[#D7EDFF] hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-						<div class="flex items-center gap-3 mb-4">
-							<div class="bg-blue-200 w-12 h-12 rounded-full flex items-center justify-center">
-								<i class="fas fa-chart-line text-blue-600 text-xl"></i>
+						<div class="flex flex-col md:flex-row items-center md:items-start gap-3 mb-4">
+							<div class="bg-blue-200 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
+								<img src="../assets/images/solutions/pro_icon_1.png" alt="Reuse Credit Line" class="w-12 h-12 object-contain"> 
 							</div>
-							<h3 class="text-xl font-bold text-gray-900">Growing Loan</h3>
+							<div class="text-center md:text-left">
+                                <h3 class="text-xl font-bold text-gray-900">Growing Loan</h3>
+                            <p class="text-gray-600  text-xs">Your Each successful repayment increases your borrowing power and lower rates</p>
+                            </div>
 						</div>
-						<p class="text-gray-600 mb-6">Each successful repayment increases your borrowing power and lower rates</p>
 						
 						<!-- Financial Details -->
 						<div class="grid grid-cols-2 gap-4 mb-6">
 							<div>
-								<div class="text-2xl font-bold text-gray-900">₦10,000 - ₦500,000</div>
-								<div class="text-sm text-gray-600">Growing Limit</div>
+								<div class="text-sm font-bold text-[#0965FE] text-left">₦10,000 - ₦500,000</div>
+								<div class="text-xs text-gray-600 text-left">Growing Limit</div>
 							</div>
 							<div>
-								<div class="text-2xl font-bold text-gray-900">1.2% - 2.0%</div>
-								<div class="text-sm text-gray-600">Loyalty Rate</div>
+								<div class="text-sm font-bold text-[#0965FE] text-right">1.2% - 2.0%</div>
+								<div class="text-xs text-gray-600 text-right">Loyalty Rate</div>
 							</div>
 							<div>
-								<div class="text-2xl font-bold text-gray-900">3 - 24 months</div>
-								<div class="text-sm text-gray-600">Flexible Terms</div>
+								<div class="text-sm font-bold text-[#0965FE] text-left">3 - 24 months</div>
+								<div class="text-xs text-gray-600 text-left">Flexible Terms</div>
 							</div>
 							<div>
-								<div class="text-2xl font-bold text-gray-900">↑25%</div>
-								<div class="text-sm text-gray-600">Limit increase</div>
+								<div class="text-sm font-bold text-[#0965FE] text-right">↑25%</div>
+								<div class="text-xs text-gray-600 text-right">Limit increase</div>
 							</div>
 						</div>
 
@@ -262,31 +261,33 @@ export default {
 
 					<!-- Quick Cash -->
 					<div style="background: linear-gradient(180.00deg, rgba(197, 248, 255, .5),rgba(255, 255, 255, 1) 10%);" class="rounded-2xl p-8 shadow-lg border border-[#D7EDFF] hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-						<div class="flex items-center gap-3 mb-4">
-							<div class="bg-blue-200 w-12 h-12 rounded-full flex items-center justify-center">
-								<i class="fas fa-wallet text-blue-600 text-xl"></i>
+						<div class="flex flex-col md:flex-row items-center md:items-start gap-3 mb-4">
+							<div class="bg-blue-200 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
+								<img src="../assets/images/solutions/pro_icon_1.png" alt="Reuse Credit Line" class="w-12 h-12 object-contain"> 
 							</div>
-							<h3 class="text-xl font-bold text-gray-900">Quick Cash</h3>
+							<div class="text-center md:text-left">
+                                <h3 class="text-xl font-bold text-gray-900">Quick Cash</h3>
+                            <p class="text-gray-600 mb-4 text-xs">Need more between paydays?Get instant access after your first loan.</p>
+                            </div>
 						</div>
-						<p class="text-gray-600 mb-6">Need more between paydays? Get instant access after your first loan.</p>
 						
 						<!-- Financial Details -->
 						<div class="grid grid-cols-2 gap-4 mb-6">
 							<div>
-								<div class="text-2xl font-bold text-gray-900">₦3,000 - ₦50,000</div>
-								<div class="text-sm text-gray-600">Quick Cash</div>
+								<div class="text-sm font-bold text-[#0965FE] text-left">₦3,000 - ₦50,000</div>
+								<div class="text-xs text-gray-600 text-left">Quick Cash</div>
 							</div>
 							<div>
-								<div class="text-2xl font-bold text-gray-900">0.07%</div>
-								<div class="text-sm text-gray-600">Daily Interest</div>
+								<div class="text-sm font-bold text-[#0965FE] text-right">0.07%</div>
+								<div class="text-xs text-gray-600 text-right">Daily Interest</div>
 							</div>
 							<div>
-								<div class="text-2xl font-bold text-gray-900">7 - 30 days</div>
-								<div class="text-sm text-gray-600">Short Term</div>
+								<div class="text-sm font-bold text-[#0965FE] text-left">7 - 30 days</div>
+								<div class="text-xs text-gray-600 text-left">Short Term</div>
 							</div>
 							<div>
-								<div class="text-2xl font-bold text-gray-900">30 secs</div>
-								<div class="text-sm text-gray-600">Repeat Access</div>
+								<div class="text-sm font-bold text-[#0965FE] text-right">30 secs</div>
+								<div class="text-xs text-gray-600 text-right">Repeat Access</div>
 							</div>
 						</div>
 
