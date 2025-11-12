@@ -163,7 +163,7 @@ export default {
 						</div>
 
 						<!-- Benefits Section -->
-						<div class="mb-6">
+						<div class="mb-6 rounded-2xl py-4 px-4" style="background: #EFFCFE;">
 							<div class="flex items-center gap-2 mb-3">
 								<i class="fas fa-gem text-blue-600"></i>
 								<h4 class="font-semibold text-gray-900">Benefits for repeat borrowers</h4>
@@ -226,7 +226,7 @@ export default {
 						</div>
 
 						<!-- Benefits Section -->
-						<div class="mb-6">
+						<div class="mb-6 rounded-2xl py-4 px-4" style="background: #EFFCFE;">
 							<div class="flex items-center gap-2 mb-3">
 								<i class="fas fa-gem text-blue-600"></i>
 								<h4 class="font-semibold text-gray-900">Loyalty Benefits</h4>
@@ -289,7 +289,7 @@ export default {
 						</div>
 
 						<!-- Benefits Section -->
-						<div class="mb-6">
+						<div class="mb-6 rounded-2xl py-4 px-4" style="background: #EFFCFE;">
 							<div class="flex items-center gap-2 mb-3">
 								<i class="fas fa-gem text-blue-600"></i>
 								<h4 class="font-semibold text-gray-900">Instant Repeat Borrowing</h4>
@@ -401,30 +401,13 @@ export default {
 		<section id="calculator" class="py-20 bg-white">
 			<div class="max-w-4xl mx-auto px-6">
 				<div class="grid lg:grid-cols-2 gap-12 items-center">
-					<div>
+					<div class="mr-20">
 						<h2 class="text-4xl font-bold text-gray-900 mb-6">Smart Loan Calculator</h2>
 						<p class="text-lg text-gray-600 mb-6">
 							Plan your finances with our transparent calculator. Know exactly how much you'll pay back before you apply.
 						</p>
 						<div class="space-y-4">
-							<div class="flex items-center gap-3">
-								<div class="bg-green-100 p-2 rounded-full">
-									<i class="fas fa-check text-green-600"></i>
-								</div>
-								<span class="text-gray-700">No hidden charges</span>
-							</div>
-							<div class="flex items-center gap-3">
-								<div class="bg-green-100 p-2 rounded-full">
-									<i class="fas fa-check text-green-600"></i>
-								</div>
-								<span class="text-gray-700">Transparent interest rates</span>
-							</div>
-							<div class="flex items-center gap-3">
-								<div class="bg-green-100 p-2 rounded-full">
-									<i class="fas fa-check text-green-600"></i>
-								</div>
-								<span class="text-gray-700">Flexible repayment options</span>
-							</div>
+                            <img src="../assets/images/calculator/calculator_text.png" alt="Calculator" class="">
 						</div>
 					</div>
 
@@ -440,9 +423,9 @@ export default {
 									v-model.number="loanAmount"
 									class="w-full mb-2">
 								<div class="flex justify-between text-sm text-gray-600">
-									<span>₦5,000</span>
-									<span class="font-semibold">{{ formattedAmount }}</span>
-									<span>₦3,000,000</span>
+									<span class="text-[#1A70FF]">₦5,000</span>
+									<span class="text-[#1A70FF]">{{ formattedAmount }}</span>
+									<span class="text-[#1A70FF]">₦3,000,000</span>
 								</div>
 							</div>
 
@@ -455,16 +438,16 @@ export default {
 									v-model.number="tenure"
 									class="w-full mb-2">
 								<div class="flex justify-between text-sm text-gray-600">
-									<span>1 Month</span>
-									<span class="font-semibold">{{ formattedTenure }}</span>
-									<span>12 Months</span>
+									<span class="text-[#1A70FF]">91 days</span>
+									<span class="text-[#1A70FF]">{{ formattedTenure }}</span>
+									<span class="text-[#1A70FF]">150 days</span>
 								</div>
 							</div>
 
 							<div class="bg-white p-4 rounded-lg border">
 								<div class="flex justify-between items-center mb-2">
 									<span class="text-gray-600">Monthly Payment</span>
-									<span class="text-xl font-bold text-blue-600">{{ formattedMonthlyPayment }}</span>
+									<span class="text-xl font-bold text-[#1A70FF]">{{ formattedMonthlyPayment }}</span>
 								</div>
 								<div class="flex justify-between items-center text-sm text-gray-600">
 									<span>Total Repayment</span>
@@ -476,7 +459,7 @@ export default {
 								</div>
 							</div>
 
-							<button @click="scrollToSection('apply')" class="bg-gradient-to-r from-blue-600 to-blue-800 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 w-full inline-flex items-center justify-center gap-2">
+							<button style="background: rgba(26, 112, 255, 1);" @click="scrollToSection('apply')" class="text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 w-full inline-flex items-center justify-center gap-2">
 								<i class="fas fa-paper-plane"></i>
 								Apply for This Loan
 							</button>
@@ -487,7 +470,7 @@ export default {
 		</section>
 
 		<!-- Testimonials -->
-		<section class="py-20 bg-gradient-to-br from-blue-50 to-blue-100">
+		<section class="py-20" style="background: rgba(228, 255, 251, 1);">
 			<div class="max-w-7xl mx-auto px-6">
 				<div class="text-center mb-12">
 					<h2 class="text-4xl font-bold text-gray-900 mb-4">Trusted by Thousands of Nigerians</h2>
@@ -495,16 +478,8 @@ export default {
 				</div>
 
 				<div class="grid md:grid-cols-3 gap-8">
-					<div class="bg-white rounded-xl p-8 shadow-lg border-l-4 border-blue-600">
-						<div class="flex items-center gap-3 mb-4">
-							<div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-								<span class="text-blue-600 font-semibold">AO</span>
-							</div>
-							<div>
-								<div class="font-semibold text-gray-900">Adebayo O.</div>
-								<div class="text-sm text-gray-600">Lagos Business Owner</div>
-							</div>
-						</div>
+					<div style="box-sizing: border-box;border-radius: 24px;box-shadow: 0px 7px 16px -5px rgba(44, 209, 191, 0.16),inset -1px -2px 0px 0px rgba(255, 255, 255, 1);background: linear-gradient(180.00deg, rgba(201, 255, 255, 1),rgba(230, 255, 252, 1) 100%);" class="relative rounded-xl p-8 shadow-lg ">
+                        <img src="../assets/images/real/trusted_text_1.png" alt="" class="absolute top-0 left-0">
 						<p class="text-gray-700 italic mb-4">
 							"SkyLend helped me expand my supermarket when I needed it most. The process was incredibly fast and transparent."
 						</p>
@@ -515,18 +490,17 @@ export default {
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
 						</div>
-					</div>
-
-					<div class="bg-white rounded-xl p-8 shadow-lg border-l-4 border-blue-600">
-						<div class="flex items-center gap-3 mb-4">
-							<div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-								<span class="text-green-600 font-semibold">CJ</span>
-							</div>
+                        <div class="flex items-center gap-3 mb-4">
 							<div>
-								<div class="font-semibold text-gray-900">Chioma J.</div>
-								<div class="text-sm text-gray-600">Abuja Nurse</div>
+								<div class="font-semibold text-gray-900"><img src="../assets/images/real/touxiang.png" alt="">Adebayo O.</div>
+								<div class="text-sm text-gray-600">Lagos Business Owner</div>
 							</div>
 						</div>
+					</div>
+
+					<div style="box-sizing: border-box;border-radius: 24px;box-shadow: 0px 7px 16px -5px rgba(44, 209, 191, 0.16),inset -1px -2px 0px 0px rgba(255, 255, 255, 1);background: linear-gradient(180.00deg, rgba(201, 255, 240, 1),rgba(230, 255, 246, 1) 100%);" class="relative rounded-xl p-8 shadow-lg">
+						<img src="../assets/images/real/trusted_text_2.png" alt="" class="absolute top-0 left-0">
+						
 						<p class="text-gray-700 italic mb-4">
 							"When I had a medical emergency, SkyLend provided the funds I needed within minutes. Their customer service is exceptional."
 						</p>
@@ -537,18 +511,17 @@ export default {
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
 						</div>
-					</div>
-
-					<div class="bg-white rounded-xl p-8 shadow-lg border-l-4 border-blue-600">
-						<div class="flex items-center gap-3 mb-4">
-							<div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center">
-								<span class="text-orange-600 font-semibold">EE</span>
-							</div>
+                        <div class="flex items-center gap-3 mb-4">
 							<div>
-								<div class="font-semibold text-gray-900">Emmanuel E.</div>
-								<div class="text-sm text-gray-600">Port Harcourt Student</div>
+								<div class="font-semibold text-gray-900"><img src="../assets/images/real/touxiang.png" alt="">Chioma J.</div>
+								<div class="text-sm text-gray-600">Abuja Nurse</div>
 							</div>
 						</div>
+					</div>
+
+					<div style="box-sizing: border-box;border-radius: 24px;box-shadow: 0px 7px 16px -5px rgba(44, 209, 191, 0.16),inset -1px -2px 0px 0px rgba(255, 255, 255, 1);background: linear-gradient(180.00deg, rgba(201, 255, 255, 1),rgba(230, 255, 252, 1) 100%);" class="relative rounded-xl p-8 shadow-lg ">
+						<img src="../assets/images/real/trusted_text_3.png" alt="" class="absolute top-0 left-0">
+						
 						<p class="text-gray-700 italic mb-4">
 							"As a student, SkyLend made it possible for me to pay my tuition fees on time. The repayment plan was very flexible."
 						</p>
@@ -558,6 +531,12 @@ export default {
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
+						</div>
+                        <div class="flex items-center gap-3 mb-4">
+							<div>
+								<div class="font-semibold text-gray-900"><img src="../assets/images/real/touxiang.png" alt="">Emmanuel E.</div>
+								<div class="text-sm text-gray-600">Port Harcourt Student</div>
+							</div>
 						</div>
 					</div>
 				</div>
