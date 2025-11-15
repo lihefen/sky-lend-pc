@@ -49,7 +49,7 @@ export default {
 
 <style>
 #app {
-	font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+	font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'Segoe UI', 'Roboto', 'Microsoft YaHei', '微软雅黑', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	background: #ffffff;

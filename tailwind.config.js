@@ -1,5 +1,3 @@
-const colors = require('tailwindcss/colors');
-
 module.exports = {
 	content: [
 		'./src/**/*.vue',
@@ -13,7 +11,7 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				// 兼容 Windows 和 macOS 的字体栈
+				// 使用本地 Helvetica 字体，优先加载本地字体文件
 				'sans': ['Helvetica Neue', 'Helvetica', 'Arial', 'Segoe UI', 'Roboto', 'Microsoft YaHei', '微软雅黑', 'sans-serif'],
 				'helvetica': ['Helvetica Neue', 'Helvetica', 'Arial', 'Segoe UI', 'Roboto', 'Microsoft YaHei', '微软雅黑', 'sans-serif'],
 			},

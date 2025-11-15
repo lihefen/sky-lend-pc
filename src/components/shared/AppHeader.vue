@@ -1,3 +1,11 @@
+<!--
+ * @Description: 
+ * @version: 
+ * @Author: hean
+ * @Date: 2025-11-10 16:38:18
+ * @LastEditors: hean
+ * @LastEditTime: 2025-11-13 19:32:16
+-->
 <script>
 export default {
 	name: 'AppHeader',
@@ -17,7 +25,6 @@ export default {
 		<div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 			<div class="flex items-center gap-3">
 				<img src="../../assets/images/logo/logo.png" alt="SkyLend" />
-                <img src="../../assets/images/logo/logo_2.png" alt="SkyLend" />
 			</div>
 			
 			<nav class="hidden lg:flex gap-8 text-gray-700 font-medium">

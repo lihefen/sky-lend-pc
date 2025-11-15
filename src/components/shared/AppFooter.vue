@@ -1,3 +1,11 @@
+<!--
+ * @Description: 
+ * @version: 
+ * @Author: hean
+ * @Date: 2025-11-10 16:38:18
+ * @LastEditors: hean
+ * @LastEditTime: 2025-11-13 19:45:44
+-->
 <script>
 export default {
 	name: 'AppFooter',
@@ -13,33 +21,16 @@ export default {
 </script>
 
 <template>
-	<footer class="bg-gray-900 text-white pt-16 pb-8">
+	<footer style="background: rgba(21, 44, 82, 1);" class="text-white pt-16 pb-8">
 		<div class="max-w-7xl mx-auto px-6">
 			<div class="grid md:grid-cols-4 gap-8 mb-12">
 				<div>
 					<div class="flex items-center gap-3 mb-4">
-						<div class="bg-blue-600 p-2 rounded-lg">
-							<i class="fas fa-shield-alt text-white"></i>
-						</div>
-						<span class="font-bold text-2xl">SkyLend</span>
+						<img src="../../assets/images/logo/logo_3.png" alt="SkyLend" >
 					</div>
 					<p class="text-gray-400 mb-4">
 						Licensed and regulated by the Central Bank of Nigeria. Your trusted partner for financial growth and stability.
 					</p>
-					<div class="flex gap-4">
-						<a href="#" class="text-gray-400 hover:text-white transition">
-							<i class="fab fa-facebook-f"></i>
-						</a>
-						<a href="#" class="text-gray-400 hover:text-white transition">
-							<i class="fab fa-twitter"></i>
-						</a>
-						<a href="#" class="text-gray-400 hover:text-white transition">
-							<i class="fab fa-instagram"></i>
-						</a>
-						<a href="#" class="text-gray-400 hover:text-white transition">
-							<i class="fab fa-linkedin-in"></i>
-						</a>
-					</div>
 				</div>
 
 				<div>
@@ -52,7 +43,7 @@ export default {
 					</ul>
 				</div>
 
-				<div>
+				<!-- <div>
 					<h3 class="font-semibold text-lg mb-4">Company</h3>
 					<ul class="space-y-2 text-gray-400">
 						<li><a @click.prevent="scrollToSection('about')" href="#about" class="hover:text-white transition cursor-pointer">About Us</a></li>
@@ -60,24 +51,42 @@ export default {
 						<li><a href="#" class="hover:text-white transition">Press</a></li>
 						<li><a href="#" class="hover:text-white transition">Blog</a></li>
 					</ul>
-				</div>
+				</div> -->
 
 				<div>
 					<h3 class="font-semibold text-lg mb-4">Contact</h3>
 					<ul class="space-y-2 text-gray-400">
 						<li class="flex items-center gap-2">
 							<i class="fas fa-map-marker-alt"></i>
-							<span>14A, Ilupeju Avenue, Lagos</span>
+							<span>17 Dopemu Road, Agege, Lagos State, Nigeria</span>
 						</li>
 						<li class="flex items-center gap-2">
 							<i class="fas fa-phone"></i>
-							<span>+234 901 234 5678</span>
+							<span>+234 812 428 0663</span>
 						</li>
 						<li class="flex items-center gap-2">
 							<i class="fas fa-envelope"></i>
-							<span>help@skylend.ng</span>
+							<span>support@skylend.com</span>
 						</li>
 					</ul>
+				</div>
+
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Follow Us</h3>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <img src="../../assets/images/foot/f_1.png" alt="Facebook">
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <img src="../../assets/images/foot/f_2.png" alt="Twitter">
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <img src="../../assets/images/foot/f_3.png" alt="Instagram">
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <img src="../../assets/images/foot/f_4.png" alt="LinkedIn">
+                        </a>
+                    </div>
 				</div>
 			</div>
 

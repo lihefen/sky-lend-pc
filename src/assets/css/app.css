@@ -11,50 +11,44 @@
 
 /* Custom Styles Below */
 
-/* Helvetica Neue 字体定义 - 使用本地字体文件，兼容 macOS 和 Windows */
+/* Helvetica Neue 字体定义 - 使用本地字体文件，优化加载性能 */
+/* Light (300) */
 @font-face {
 	font-family: 'Helvetica Neue';
-	src: url('./fonts/H-HelveticaNeueLights-4.ttc') format('truetype-collection'),
-		 url('./fonts/H-HelveticaNeue-2.ttc') format('truetype-collection'),
-		 local('Helvetica Neue Light'),
-		 local('HelveticaNeue-Light');
+	src: url('./fonts/H-HelveticaNeueLights-4.ttc') format('truetype-collection');
 	font-weight: 300;
 	font-style: normal;
 	font-display: swap;
 }
 
+/* Regular (400) - 默认权重 */
 @font-face {
 	font-family: 'Helvetica Neue';
-	src: url('./fonts/H-HelveticaNeue-2.ttc') format('truetype-collection'),
-		 url('./fonts/H-HelveticaNeueInterface-5.ttc') format('truetype-collection'),
-		 url('./fonts/HELVETI1-1.ttf') format('truetype'),
-		 local('Helvetica Neue'),
-		 local('HelveticaNeue'),
-		 local('Helvetica Neue Regular');
+	src: url('./fonts/HELVETI1-1.ttf') format('truetype'),
+		 url('./fonts/H-HelveticaNeue-2.ttc') format('truetype-collection'),
+		 url('./fonts/H-HelveticaNeueInterface-5.ttc') format('truetype-collection');
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
 }
 
+/* Medium (500) */
 @font-face {
 	font-family: 'Helvetica Neue';
 	src: url('./fonts/H-HelveticaNeue-2.ttc') format('truetype-collection'),
 		 url('./fonts/H-HelveticaNeueInterface-5.ttc') format('truetype-collection'),
-		 url('./fonts/HELVETI1-1.ttf') format('truetype'),
-		 local('Helvetica Neue Medium'),
-		 local('HelveticaNeue-Medium');
+		 url('./fonts/HELVETI1-1.ttf') format('truetype');
 	font-weight: 500;
 	font-style: normal;
 	font-display: swap;
 }
 
+/* Bold (700) */
 @font-face {
 	font-family: 'Helvetica Neue';
-	src: url('./fonts/H-HelveticaNeue-2.ttc') format('truetype-collection'),
-		 url('./fonts/H-Helvetica-6.ttc') format('truetype-collection'),
-		 url('./fonts/HELVETI1-1.ttf') format('truetype'),
-		 local('Helvetica Neue Bold'),
-		 local('HelveticaNeue-Bold');
+	src: url('./fonts/H-Helvetica-6.ttc') format('truetype-collection'),
+		 url('./fonts/H-HelveticaNeue-2.ttc') format('truetype-collection'),
+		 url('./fonts/HELVETI1-1.ttf') format('truetype');
 	font-weight: 700;
 	font-style: normal;
 	font-display: swap;
@@ -63,20 +57,28 @@
 /* 标准 Helvetica 字体（作为回退） */
 @font-face {
 	font-family: 'Helvetica';
-	src: url('./fonts/H-Helvetica-6.ttc') format('truetype-collection'),
-		 url('./fonts/HELVETI1-1.ttf') format('truetype'),
-		 local('Helvetica');
-	font-weight: normal;
+	src: url('./fonts/HELVETI1-1.ttf') format('truetype'),
+		 url('./fonts/H-Helvetica-6.ttc') format('truetype-collection');
+	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
 }
 
-/* 兼容 Windows 和 macOS 的字体栈 */
+@font-face {
+	font-family: 'Helvetica';
+	src: url('./fonts/H-Helvetica-6.ttc') format('truetype-collection'),
+		 url('./fonts/HELVETI1-1.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* 全局字体设置 - 优先使用本地 Helvetica 字体 */
 body {
-	/* macOS 优先使用 Helvetica Neue，Windows 使用 Arial，其他系统使用通用无衬线字体 */
 	font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'Segoe UI', 'Roboto', 'Microsoft YaHei', '微软雅黑', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
 }
 
 /* Theme Colors */

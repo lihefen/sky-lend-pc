@@ -52,12 +52,12 @@ export default {
 	<div class="pt-20">
 		<!-- Hero Section -->
 		<section id="home" class="text-white">
-			<div class="max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-12 items-center">
+			<div class="max-w-7xl mx-auto px-6 py-10 grid lg:grid-cols-2 gap-12 items-center">
 				<div>
 					<div><img src="../assets/images/banner/banner_tag.png"  /></div>
 					
-					<h1 class="text-5xl lg:text-6xl font-bold mb-6 leading-tight text-black  mt-4 font-helvetica">
-						Financial Freedom for <span class="text-[#1A70FF]">Every Nigerian</span>
+					<h1 style="line-height: 1.2;" class="text-5xl lg:text-5xl font-bold mb-6 leading-tight text-black  mt-4 font-helvetica">
+						<i class="font-bold">Financial Freedom for</i> <br/><span class="text-[#1A70FF]"><i class="font-bold">Every Nigerian</i></span>
 					</h1>
 					
 					<p class="text-xl text-black mb-8 leading-relaxed">
@@ -65,27 +65,26 @@ export default {
 					</p>
 					
 					<div class="flex flex-col sm:flex-row gap-4 mb-8">
-						<a @click.prevent="scrollToSection('apply')" href="#apply" class="bg-[#1A70FF] hover:bg-[#1A70FF] text-white px-8 py-3 rounded-lg font-semibold transition text-center cursor-pointer inline-flex items-center justify-center gap-2">
-							<i class="fas fa-paper-plane"></i>
+						<a @click.prevent="scrollToSection('apply')" href="#apply" class="bg-[#1A70FF] hover:bg-[#1A70FF] text-white px-12 py-4 rounded-lg font-semibold transition text-center cursor-pointer inline-flex items-center justify-center gap-2">
 							Apply Instantly
 						</a>
-						<a @click.prevent="scrollToSection('features')" href="#features" class="bg-white/10 border border-[#1A70FF] text-[#1A70FF] hover:bg-white/20 px-8 py-3 rounded-lg font-semibold transition text-center cursor-pointer">
+						<a @click.prevent="scrollToSection('features')" href="#features" class="bg-white/10 border border-[#1A70FF] text-[#1A70FF] hover:bg-white/20 px-12 py-4 rounded-lg font-semibold transition text-center cursor-pointer">
 							Watch Demo
 						</a>
 					</div>
 					
-					<div class="grid grid-cols-3 gap-6 text-center">
-						<div>
-							<div class="relative text-2xl text-black text-center"><img class="relative" src="../assets/images/banner/banner_num_bg.png" alt="Number Background" ><span class="absolute top-2 left-0 text-2xl  text-black font-helvetica">500K+</span></div>
+					<div class="flex">
+						<div >
+							<div class="relative text-2xl text-black text-center"><img class="relative" src="../assets/images/banner/banner_num_bg.png" alt="Number Background" ><span class="absolute top-2 left-0 text-2xl  text-black font-helvetica font-bold">500K+</span></div>
 							<div class="text-black text-sm text-left mt-2">Customers</div>
 						</div>
-						<div>
-							<div class="relative text-2xl  text-black text-center"><img class="relative mx-auto" src="../assets/images/banner/banner_num_bg.png" alt="Number Background" ><span class="absolute top-2 left-0 text-2xl  text-black font-helvetica text-center w-full">₦15B+</span></div>
-							<div class="text-black text-sm">Loans Disbursed</div>
+						<div class="ml-16">
+							<div class="relative text-2xl  text-black text-center"><img class="relative mx-auto" src="../assets/images/banner/banner_num_bg.png" alt="Number Background" ><span class="absolute top-2 left-0 text-2xl font-bold  text-black font-helvetica text-center w-full">₦15B+</span></div>
+							<div class="text-black text-sm mt-2">Loans Disbursed</div>
 						</div>
-						<div>
-							<div class="relative text-2xl text-black text-center"><img class="relative mx-auto" src="../assets/images/banner/banner_num_bg.png" alt="Number Background" ><span class="absolute top-2 left-0 text-2xl text-black font-helvetica text-center w-full">98%</span></div>
-							<div class="text-black text-sm">Approval Rate</div>
+						<div class="ml-16">
+							<div class="relative text-2xl text-black text-center"><img class="relative mx-auto" src="../assets/images/banner/banner_num_bg.png" alt="Number Background" ><span class="absolute top-2 left-0 text-2xl font-bold text-black font-helvetica text-center w-full">98%</span></div>
+							<div class="text-black text-sm mt-2">Approval Rate</div>
 						</div>
 					</div>
 				</div>
@@ -165,31 +164,31 @@ export default {
 						<!-- Benefits Section -->
 						<div class="mb-6 rounded-2xl py-4 px-4" style="background: #EFFCFE;">
 							<div class="flex items-center gap-2 mb-3">
-								<i class="fas fa-gem text-blue-600"></i>
+								<i class="fas fa-gem text-[#51A8FF]"></i>
 								<h4 class="font-semibold text-gray-900">Benefits for repeat borrowers</h4>
 							</div>
 							<ul class="space-y-2 text-gray-600">
 								<li class="flex items-start gap-2">
-									<i class="fas fa-check text-green-500 text-sm mt-1"></i>
+									<i class="fas fa-check text-[#51A8FF] text-sm mt-1"></i>
 									<span class="text-sm">Higher loan amounts with each successful repayment</span>
 								</li>
 								<li class="flex items-start gap-2">
-									<i class="fas fa-check text-green-500 text-sm mt-1"></i>
+									<i class="fas fa-check text-[#51A8FF] text-sm mt-1"></i>
 									<span class="text-sm">Faster approval - no re-application needed</span>
 								</li>
 								<li class="flex items-start gap-2">
-									<i class="fas fa-check text-green-500 text-sm mt-1"></i>
+									<i class="fas fa-check text-[#51A8FF] text-sm mt-1"></i>
 									<span class="text-sm">Lower interest rates for loyal customers</span>
 								</li>
 								<li class="flex items-start gap-2">
-									<i class="fas fa-check text-green-500 text-sm mt-1"></i>
+									<i class="fas fa-check text-[#51A8FF] text-sm mt-1"></i>
 									<span class="text-sm">One-tap borrowing after first loan</span>
 								</li>
 							</ul>
 						</div>
 
 						<button class="w-full bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300">
-							Borrow Again
+							Apply
 						</button>
 					</div>
 
@@ -197,7 +196,7 @@ export default {
 					<div style="background: linear-gradient(180.00deg, rgba(197, 248, 255, .5),rgba(255, 255, 255, 1) 10%);" class="rounded-2xl p-8 shadow-lg border border-[#D7EDFF] hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
 						<div class="flex flex-col md:flex-row items-center md:items-start gap-3 mb-4">
 							<div class="bg-blue-200 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
-								<img src="../assets/images/solutions/pro_icon_1.png" alt="Reuse Credit Line" class="w-12 h-12 object-contain"> 
+								<img src="../assets/images/solutions/pro_icon_2.png" alt="Reuse Credit Line" class="w-12 h-12 object-contain"> 
 							</div>
 							<div class="text-center md:text-left">
                                 <h3 class="text-xl font-bold text-gray-900">Growing Loan</h3>
@@ -228,31 +227,31 @@ export default {
 						<!-- Benefits Section -->
 						<div class="mb-6 rounded-2xl py-4 px-4" style="background: #EFFCFE;">
 							<div class="flex items-center gap-2 mb-3">
-								<i class="fas fa-gem text-blue-600"></i>
+								<i class="fas fa-gem text-[#51A8FF]"></i>
 								<h4 class="font-semibold text-gray-900">Loyalty Benefits</h4>
 							</div>
 							<ul class="space-y-2 text-gray-600">
 								<li class="flex items-start gap-2">
-									<i class="fas fa-check text-green-500 text-sm mt-1"></i>
+									<i class="fas fa-check text-[#51A8FF] text-sm mt-1"></i>
 									<span class="text-sm">Automatic 25% limit increase after 3 repayments</span>
 								</li>
 								<li class="flex items-start gap-2">
-									<i class="fas fa-check text-green-500 text-sm mt-1"></i>
+									<i class="fas fa-check text-[#51A8FF] text-sm mt-1"></i>
 									<span class="text-sm">Rate decrease with each successful loan</span>
 								</li>
 								<li class="flex items-start gap-2">
-									<i class="fas fa-check text-green-500 text-sm mt-1"></i>
+									<i class="fas fa-check text-[#51A8FF] text-sm mt-1"></i>
 									<span class="text-sm">Borrow again before finishing current loan</span>
 								</li>
 								<li class="flex items-start gap-2">
-									<i class="fas fa-check text-green-500 text-sm mt-1"></i>
+									<i class="fas fa-check text-[#51A8FF] text-sm mt-1"></i>
 									<span class="text-sm">Special offers for consistent borrowers</span>
 								</li>
 							</ul>
 						</div>
 
 						<button class="w-full bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300">
-							Borrow Again
+							Apply
 						</button>
 					</div>
 
@@ -260,7 +259,7 @@ export default {
 					<div style="background: linear-gradient(180.00deg, rgba(197, 248, 255, .5),rgba(255, 255, 255, 1) 10%);" class="rounded-2xl p-8 shadow-lg border border-[#D7EDFF] hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
 						<div class="flex flex-col md:flex-row items-center md:items-start gap-3 mb-4">
 							<div class="bg-blue-200 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
-								<img src="../assets/images/solutions/pro_icon_1.png" alt="Reuse Credit Line" class="w-12 h-12 object-contain"> 
+								<img src="../assets/images/solutions/pro_icon_3.png" alt="Reuse Credit Line" class="w-12 h-12 object-contain"> 
 							</div>
 							<div class="text-center md:text-left">
                                 <h3 class="text-xl font-bold text-gray-900">Quick Cash</h3>
@@ -291,31 +290,31 @@ export default {
 						<!-- Benefits Section -->
 						<div class="mb-6 rounded-2xl py-4 px-4" style="background: #EFFCFE;">
 							<div class="flex items-center gap-2 mb-3">
-								<i class="fas fa-gem text-blue-600"></i>
+								<i class="fas fa-gem text-[#51A8FF]"></i>
 								<h4 class="font-semibold text-gray-900">Instant Repeat Borrowing</h4>
 							</div>
 							<ul class="space-y-2 text-gray-600">
 								<li class="flex items-start gap-2">
-									<i class="fas fa-check text-green-500 text-sm mt-1"></i>
+									<i class="fas fa-check text-[#51A8FF] text-sm mt-1"></i>
 									<span class="text-sm">One - tap access after first approval</span>
 								</li>
 								<li class="flex items-start gap-2">
-									<i class="fas fa-check text-green-500 text-sm mt-1"></i>
+									<i class="fas fa-check text-[#51A8FF] text-sm mt-1"></i>
 									<span class="text-sm">No documents needed for repeat loans</span>
 								</li>
 								<li class="flex items-start gap-2">
-									<i class="fas fa-check text-green-500 text-sm mt-1"></i>
+									<i class="fas fa-check text-[#51A8FF] text-sm mt-1"></i>
 									<span class="text-sm">Borrow again even with existing loans</span>
 								</li>
 								<li class="flex items-start gap-2">
-									<i class="fas fa-check text-green-500 text-sm mt-1"></i>
+									<i class="fas fa-check text-[#51A8FF] text-sm mt-1"></i>
 									<span class="text-sm">Automatic increase with good history</span>
 								</li>
 							</ul>
 						</div>
 
 						<button class="w-full bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300">
-							Borrow Again
+							Apply
 						</button>
 					</div>
 				</div>
@@ -323,7 +322,7 @@ export default {
 		</section>
 
 		<!-- How It Works -->
-		<section id="how-it-works" style="background: rgba(26, 112, 255, 1);" class="py-20 bg-gray-50 relative overflow-hidden">
+		<section id="how-it-works" style="background: rgba(26, 112, 255, 1);" class="relative py-20 bg-gray-50 relative overflow-hidden">
 			<!-- Background Pattern -->
 			<div class="absolute inset-0 opacity-10">
 				<div class="absolute inset-0" style="background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,0.1) 10px, rgba(255,255,255,0.1) 20px);"></div>
@@ -478,66 +477,67 @@ export default {
 				</div>
 
 				<div class="grid md:grid-cols-3 gap-8">
-					<div style="box-sizing: border-box;border-radius: 24px;box-shadow: 0px 7px 16px -5px rgba(44, 209, 191, 0.16),inset -1px -2px 0px 0px rgba(255, 255, 255, 1);background: linear-gradient(180.00deg, rgba(201, 255, 255, 1),rgba(230, 255, 252, 1) 100%);" class="relative rounded-xl p-8 shadow-lg ">
-                        <img src="../assets/images/real/trusted_text_1.png" alt="" class="absolute top-0 left-0">
-						<p class="text-gray-700 italic mb-4">
-							"SkyLend helped me expand my supermarket when I needed it most. The process was incredibly fast and transparent."
+					<div style="box-sizing: border-box;border-radius: 24px;box-shadow: 0px 7px 16px -5px rgba(44, 209, 191, 0.16),inset -1px -2px 0px 0px rgba(255, 255, 255, 1);background: linear-gradient(180.00deg, rgba(201, 255, 255, 1),rgba(230, 255, 252, 1) 100%);" class="relative rounded-xl p-6 shadow-lg">
+                        <img src="../assets/images/real/trusted_text_1.png" alt="" class="absolute top-10 left-0">
+						<p class="relative z-10 text-black mb-4 pt-8 ">
+							SkyLend helped me expand my supermarket when I needed it most. The process was incredibly fast and transparent.
 						</p>
-						<div class="flex text-yellow-400">
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-						</div>
-                        <div class="flex items-center gap-3 mb-4">
-							<div>
-								<div class="font-semibold text-gray-900"><img src="../assets/images/real/touxiang.png" alt="">Adebayo O.</div>
-								<div class="text-sm text-gray-600">Lagos Business Owner</div>
-							</div>
-						</div>
+						<div class="flex items-center justify-between">
+                            <div class="flex text-yellow-400 ">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold text-black text-right"> <img src="../assets/images/real/touxiang.png" alt="" class="inline-block  mr-1 vertical-middle"><span >Adebayo O.</span></div>
+                                <div class="text-sm text-gray-600">Lagos Business Owner</div>
+                            </div>
+                        </div>
 					</div>
 
-					<div style="box-sizing: border-box;border-radius: 24px;box-shadow: 0px 7px 16px -5px rgba(44, 209, 191, 0.16),inset -1px -2px 0px 0px rgba(255, 255, 255, 1);background: linear-gradient(180.00deg, rgba(201, 255, 240, 1),rgba(230, 255, 246, 1) 100%);" class="relative rounded-xl p-8 shadow-lg">
-						<img src="../assets/images/real/trusted_text_2.png" alt="" class="absolute top-0 left-0">
+					<div style="box-sizing: border-box;border-radius: 24px;box-shadow: 0px 7px 16px -5px rgba(44, 209, 191, 0.16),inset -1px -2px 0px 0px rgba(255, 255, 255, 1);background: linear-gradient(180.00deg, rgba(201, 255, 240, 1),rgba(230, 255, 246, 1) 100%);" class="relative rounded-xl p-6 shadow-lg">
+						<img src="../assets/images/real/trusted_text_2.png" alt="" class="absolute top-10 left-0">
 						
-						<p class="text-gray-700 italic mb-4">
-							"When I had a medical emergency, SkyLend provided the funds I needed within minutes. Their customer service is exceptional."
+						<p class="relative z-10 text-black mb-4 pt-8 ">
+							When I had a medical emergency, SkyLend provided the funds I needed within minutes. Their customer service is exceptional.
 						</p>
-						<div class="flex text-yellow-400">
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-						</div>
-                        <div class="flex items-center gap-3 mb-4">
-							<div>
-								<div class="font-semibold text-gray-900"><img src="../assets/images/real/touxiang.png" alt="">Chioma J.</div>
-								<div class="text-sm text-gray-600">Abuja Nurse</div>
-							</div>
-						</div>
+						<div class="flex items-center justify-between">
+                            <div class="flex text-yellow-400 mb-4">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold text-black text-right"> <img src="../assets/images/real/touxiang.png" alt="" class="inline-block  mr-1 vertical-middle"><span >Chioma J.</span></div>
+                                <div class="text-sm text-gray-600 text-right">Abuja Nurse</div>
+                            </div>
+                        </div>
 					</div>
 
-					<div style="box-sizing: border-box;border-radius: 24px;box-shadow: 0px 7px 16px -5px rgba(44, 209, 191, 0.16),inset -1px -2px 0px 0px rgba(255, 255, 255, 1);background: linear-gradient(180.00deg, rgba(201, 255, 255, 1),rgba(230, 255, 252, 1) 100%);" class="relative rounded-xl p-8 shadow-lg ">
-						<img src="../assets/images/real/trusted_text_3.png" alt="" class="absolute top-0 left-0">
+					<div style="box-sizing: border-box;border-radius: 24px;box-shadow: 0px 7px 16px -5px rgba(44, 209, 191, 0.16),inset -1px -2px 0px 0px rgba(255, 255, 255, 1);background: linear-gradient(180.00deg, rgba(201, 255, 255, 1),rgba(230, 255, 252, 1) 100%);" class="relative rounded-xl p-6 shadow-lg">
+						<img src="../assets/images/real/trusted_text_3.png" alt="" class="absolute top-10 left-0">
 						
-						<p class="text-gray-700 italic mb-4">
-							"As a student, SkyLend made it possible for me to pay my tuition fees on time. The repayment plan was very flexible."
+						<p class="relative z-10 text-black mb-4 pt-8 ">
+							As a student, SkyLend made it possible for me to pay my tuition fees on time. The repayment plan was very flexible.
 						</p>
-						<div class="flex text-yellow-400">
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-						</div>
-                        <div class="flex items-center gap-3 mb-4">
-							<div>
-								<div class="font-semibold text-gray-900"><img src="../assets/images/real/touxiang.png" alt="">Emmanuel E.</div>
-								<div class="text-sm text-gray-600">Port Harcourt Student</div>
-							</div>
-						</div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex text-yellow-400 mb-4">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold text-black text-right"><img src="../assets/images/real/touxiang.png" alt="" class="inline-block  mr-1 vertical-middle"><span >Emmanuel E.</span></div>
+                                
+                                <div class="text-sm text-gray-600 text-right">Port Harcourt Student</div>
+                            </div>
+                        </div>
 					</div>
 				</div>
 			</div>
@@ -554,23 +554,26 @@ export default {
 				</div>
 
 				<div class="grid md:grid-cols-3 gap-8">
-					<div class="bg-white rounded-xl p-8 shadow-lg border border-gray-200">
-						<h3 class="text-xl font-bold text-gray-900 mb-3">Our Vision</h3>
-						<p class="text-gray-600">
+					<div style="border-radius: 20px;background: rgba(26, 112, 255, 1);" class=" relative rounded-xl p-8 shadow-lg ">
+                        <img src="../assets/images/about/about_icon_1.png" alt="" class="absolute top-0 right-0">
+						<h3 class="text-xl font-bold text-white mb-3">Our Vision</h3>
+						<p class="text-white">
 							To become Nigeria's most trusted digital lender — promoting responsible borrowing and long-term financial wellness.
 						</p>
 					</div>
 
-					<div class="bg-white rounded-xl p-8 shadow-lg border border-gray-200">
-						<h3 class="text-xl font-bold text-gray-900 mb-3">Our Mission</h3>
-						<p class="text-gray-600">
+					<div style="border-radius: 20px;background: rgba(26, 112, 255, 1);" class=" relative rounded-xl p-8 shadow-lg ">
+                        <img src="../assets/images/about/about_icon_2.png" alt="" class="absolute top-0 right-0">
+						<h3 class="text-xl font-bold text-white mb-3">Our Mission</h3>
+						<p class="text-white">
 							To provide transparent, secure, and instant access to financial support powered by AI technology and ethical lending practices.
 						</p>
 					</div>
 
-					<div class="bg-white rounded-xl p-8 shadow-lg border border-gray-200">
-						<h3 class="text-xl font-bold text-gray-900 mb-3">Our Promise</h3>
-						<p class="text-gray-600">
+					<div style="border-radius: 20px;background: rgba(26, 112, 255, 1);" class=" relative rounded-xl p-8 shadow-lg ">
+                        <img src="../assets/images/about/about_icon_3.png" alt="" class="absolute  right-0 opacity-10" style="top:-20px">
+						<h3 class="text-xl font-bold text-white mb-3">Our Promise</h3>
+						<p class="text-white">
 							Every loan we provide comes with clarity, fairness, and support — because your trust is our most valuable asset.
 						</p>
 					</div>
@@ -579,7 +582,7 @@ export default {
 		</section>
 
 		<!-- Compliance Section -->
-		<section class="py-20 bg-gray-50">
+		<section class="py-20 bg-white">
 			<div class="max-w-7xl mx-auto px-6">
 				<div class="text-center mb-16">
 					<h2 class="text-4xl font-bold text-gray-900 mb-4">Compliance & Data Security</h2>
@@ -588,49 +591,93 @@ export default {
 					</p>
 				</div>
 
-				<div class="grid md:grid-cols-3 gap-8">
-					<div class="bg-white rounded-xl p-8 shadow-lg border border-gray-200">
-						<h3 class="text-xl font-bold text-gray-900 mb-3">Licensed & Regulated</h3>
-						<p class="text-gray-600">
-							Fully licensed by the Central Bank of Nigeria (CBN) with adherence to fair lending regulations.
-						</p>
-					</div>
+				<div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="flex justify-center md:justify-start">
+                        <img src="../assets/images/security/security_img.png" alt="Security Illustration" class="w-full max-w-md">
+                    </div>
 
-					<div class="bg-white rounded-xl p-8 shadow-lg border border-gray-200">
-						<h3 class="text-xl font-bold text-gray-900 mb-3">Data Protection</h3>
-						<p class="text-gray-600">
-							Compliant with NDPC and NDIC standards, ensuring all user information is handled with strict confidentiality.
-						</p>
-					</div>
+                    <div class="space-y-8">
+                        <div>
+                            <h3  class="relative text-xl font-bold mb-3 inline-block pr-4">Data Protection <span class="absolute bottom-0 right-0 w-full h-2" style="background: rgba(80, 217, 255, 1);opacity: 0.6;"></span></h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                Compliant with NDPC and NDIC standards, ensuring all user information is handled with strict confidentiality.
+                            </p>
+                        </div>
+                        
+                        <div>
+                            <h3  class="relative text-xl font-bold mb-3 inline-block pr-2">Secure Transactions<span class="absolute bottom-0 right-0 w-full h-2" style="background: rgba(80, 217, 255, 1);opacity: 0.6;"></span></h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                All transactions are end-to-end encrypted and monitored to prevent fraud and unauthorized access.
+                            </p>
+                        </div>
 
-					<div class="bg-white rounded-xl p-8 shadow-lg border border-gray-200">
-						<h3 class="text-xl font-bold text-gray-900 mb-3">Secure Transactions</h3>
-						<p class="text-gray-600">
-							All transactions are end-to-end encrypted and monitored to prevent fraud and unauthorized access.
-						</p>
-					</div>
+                        <div>
+                            <h3  class="relative text-xl font-bold mb-3 inline-block pr-2">Licensed & Regulated<span class="absolute bottom-0 right-0 w-full h-2" style="background: rgba(80, 217, 255, 1);opacity: 0.6;"></span></h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                Fully licensed by the Central Bank of Nigeria (CBN) with adherence to fair lending regulations.
+                            </p>
+                        </div>
+                    </div>
 				</div>
 			</div>
 		</section>
 
+        <section style="background: rgba(107, 255, 223, 1);" class="py-20">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+					<h2 class="text-4xl font-bold text-gray-900 mb-4">Apply for a Loan in Minutes</h2>
+					<p class="text-xl text-gray-600 max-w-3xl mx-auto">
+						Our application process is designed to be simple，transparent， and full digital-powered by AI for instant evaluation and approval.
+                    </p>
+				</div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+					<div style="border-radius: 20px;background: rgba(255, 255, 255, .85);" class=" relative rounded-xl p-4 shadow-lg ">
+						<h3 style="border-radius: 10px;background: linear-gradient(90.00deg, rgba(107, 255, 223, 1),rgba(233, 255, 250, 1) 100%);" class="text-xl font-bold text-black mb-3 py-2 px-2">1.Minimal Steps</h3>
+						<p class="text-black">
+							Enter your phone number and verify with OTP.
+						</p>
+                        <p class="text-black">
+							Fill in your basic details (occupation, income   source).
+						</p>
+                        <p class="text-black">
+							Upload optional documents (ID, bank statement).
+						</p>
+					</div>
+
+					<div style="border-radius: 20px;background: rgba(255, 255, 255, .85);" class=" relative rounded-xl p-4 shadow-lg ">
+						<h3 style="border-radius: 10px;background: linear-gradient(90.00deg, rgba(107, 255, 223, 1),rgba(233, 255, 250, 1) 100%);" class="text-xl font-bold text-black mb-3 py-2 px-2">2.Real-time Pre-Approval</h3>
+						<p class="text-black">
+							Our AI-based credit scoring engine (inspired by Aella Credit's model) analyzes your profile instantly to determine eligubility and show your approval limit - no waiting, no paperwork.
+						</p>
+					</div>
+
+					<div style="border-radius: 20px;background: rgba(255, 255, 255, .85);" class=" relative rounded-xl p-4 shadow-lg ">
+						<h3 style="border-radius: 10px;background: linear-gradient(90.00deg, rgba(107, 255, 223, 1),rgba(233, 255, 250, 1) 100%);" class="text-xl font-bold text-black mb-3 py-2 px-2">3.Transparent Fees</h3>
+						<p class="text-black">
+							Your'll see the total repayment, interest breakdown, and late fee policy unfront - ensuring compete transparency and trust in every transaction.
+						</p>
+					</div>
+				</div>
+            </div>
+        </section>
 		<!-- CTA Section -->
-		<section id="apply" class="bg-gradient-to-br from-blue-600 to-blue-800 text-white py-20">
+		<section id="apply" class="py-20">
 			<div class="max-w-4xl mx-auto px-6 text-center">
-				<h2 class="text-4xl font-bold mb-6">Ready to Transform Your Financial Future?</h2>
-				<p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-					Join over 500,000 Nigerians who have achieved their dreams with SkyLend. Apply now and get instant approval.
+				<h2 class="text-4xl font-bold mb-6 text-black">Ready to Transform Your Financial Future?</h2>
+				<p class="text-xl text-black mb-8 max-w-2xl mx-auto">
+					Join over <b class="text-[#1A70FF]"> 500,000 </b>Nigerians who have achieved their dreams with SkyLend. Apply now and get instant approval.
 				</p>
 				<div class="flex flex-col sm:flex-row gap-4 justify-center">
-					<a href="#apply" class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold transition inline-flex items-center justify-center gap-2">
-						<i class="fas fa-paper-plane"></i>
-						Apply Now - It's Free
+					<a href="#apply" class="bg-[#1A70FF] hover:bg-[#1A70FF]/50 text-white w-[340px] py-5 rounded-lg font-semibold transition inline-flex items-center justify-center gap-2">
+						Apply Now 
 					</a>
-					<a @click.prevent="scrollToSection('contact')" href="#contact" class="bg-white/10 text-white hover:bg-white/20 px-8 py-3 rounded-lg font-semibold transition cursor-pointer">
+					<a style="box-sizing: border-box;border: 1px solid rgba(26, 112, 255, 1);background: rgba(21, 109, 255, 0.05);" @click.prevent="scrollToSection('contact')" href="#contact" class="border border-[#1A70FF] text-[#1A70FF] hover:bg-white/20 w-[340px] py-5 rounded-lg font-semibold transition cursor-pointer">
 						Speak to an Agent
 					</a>
 				</div>
-				<div class="mt-8 text-blue-200 text-sm">
-					<i class="fas fa-lock"></i> Your information is secure and encrypted
+				<div class="mt-8 text-black text-sm">
+					<img src="../assets/images/safe_icon.png" alt="" class="inline-block mr-2">Your information is secure and encrypted
 				</div>
 			</div>
 		</section>
@@ -648,21 +695,21 @@ export default {
 							<i class="fas fa-map-marker-alt text-blue-600 text-xl"></i>
 						</div>
 						<h3 class="font-semibold text-gray-900 mb-2">Address</h3>
-						<p class="text-gray-600">14A, Ilupeju Avenue, Lagos</p>
+						<p class="text-gray-600">17 Dopemu Road, Agege, Lagos State, Nigeria</p>
 					</div>
 					<div>
 						<div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
 							<i class="fas fa-phone text-blue-600 text-xl"></i>
 						</div>
 						<h3 class="font-semibold text-gray-900 mb-2">Phone</h3>
-						<p class="text-gray-600">+234 901 234 5678</p>
+						<p class="text-gray-600">+234 812 428 0663</p>
 					</div>
 					<div>
 						<div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
 							<i class="fas fa-envelope text-blue-600 text-xl"></i>
 						</div>
 						<h3 class="font-semibold text-gray-900 mb-2">Email</h3>
-						<p class="text-gray-600">help@skylend.ng</p>
+						<p class="text-gray-600">support@skylend.com</p>
 					</div>
 				</div>
 			</div>
